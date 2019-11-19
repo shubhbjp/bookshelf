@@ -1,0 +1,47 @@
+<%= form_with(model: book, local: true) do |form| %>
+  <% if book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+        <% book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :about_the_book %>
+    <%= form.text_field :about %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.select(:category, options_for_select(@book_category, 0))%>
+  </div>
+
+  <div class="field">
+    <%= form.label :publication_date %>
+    <%= form.date_field :publication_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :writers_id %>
+    <%= form.select(:writers_id, options_for_select(@all_writers, 0),{}, {:multiple => true}) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publications %>
+    <%= form.select(:publications_id, options_for_select(@all_publications,0)) %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

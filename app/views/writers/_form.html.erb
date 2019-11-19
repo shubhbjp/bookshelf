@@ -1,0 +1,68 @@
+<%= form_with(model: writer, local: true) do |form| %>
+  <% if writer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(writer.errors.count, "error") %> prohibited this writer from being saved:</h2>
+
+      <ul>
+        <% writer.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mobile %>
+    <%= form.text_field :mobile %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.radio_button :gender, 'm', :checked => true %> Male
+    <%= form.radio_button :gender, 'f' %>  Female
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_area :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.select(:country, options_for_select(@countries, 0)) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.select(:state, options_for_select(@states, 0)) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.select(:city, options_for_select(@cities, 0)) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pincode %>
+    <%= form.text_field :pincode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isActive %>
+    <%= form.check_box :isActive, checked:true%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

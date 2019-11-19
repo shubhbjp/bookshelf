@@ -1,0 +1,292 @@
+// Place all the styles related to the Bookshelf controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.body{
+	width:100%;
+	display:block;
+	position:relative;
+  margin:0px;
+}
+
+.cover_image{
+	width: 100%;
+    height: 400px;
+    display: block;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    z-index:1;
+}
+.main-container{
+	background:lightgrey;
+	color:blue;
+}
+.form-data{
+	position: fixed;
+    z-index: 2;
+    top: 15%;
+    left: 20%;
+    width: 75%;
+}
+.search_wrapper form {
+  width: 100%;
+  max-width: 790px;
+  margin-bottom: 0;
+}
+
+.search_wrapper form .inner-form {
+  background: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.search_wrapper form .inner-form .input-field {
+  height: 68px;
+}
+
+.search_wrapper form .inner-form .input-field input {
+  height: 70%;
+  background: transparent;
+  border: 0;
+  display: block;
+  width: 90%;
+  padding: 10px 32px;
+  font-size: 16px;
+  color: #555;
+}
+
+.search_wrapper form .inner-form .input-field input.placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.search_wrapper form .inner-form .input-field input:-moz-placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.search_wrapper form .inner-form .input-field input::-webkit-input-placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.search_wrapper form .inner-form .input-field input:hover, .search_wrapper form .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+  border-color: #fff;
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap {
+  width: 200px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices__inner {
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  height: 100%;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 30px;
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices__inner .choices__list.choices__list--single {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices__inner .choices__item.choices__item--selectable.choices__placeholder {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  opacity: 1;
+  color: #888;
+}
+.search_wrapper form .inner-form .input-field.first-wrap .choices__inner .choices__list--single .choices__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  color: #555;
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices[data-type*="select-one"]:after {
+  right: 30px;
+  border-color: #e5e5e5 transparent transparent transparent;
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices__list.choices__list--dropdown {
+  border: 0;
+  background: #fff;
+  padding: 20px 30px;
+  margin-top: 2px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices__list.choices__list--dropdown .choices__item--selectable {
+  padding-right: 0;
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background: #fff;
+  color: #63c76a;
+}
+
+.search_wrapper form .inner-form .input-field.first-wrap .choices__list--dropdown .choices__item {
+  color: #555;
+  min-height: 24px;
+}
+
+.search_wrapper form .inner-form .input-field.second-wrap {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.search_wrapper form .inner-form .input-field.third-wrap {
+  width: 74px;
+}
+
+.search_wrapper form .inner-form .input-field.third-wrap .btn-search {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  background: #63c76a;
+  transition: all .2s ease-out, color .2s ease-out;
+}
+
+.search_wrapper form .inner-form .input-field.third-wrap .btn-search svg {
+  width: 16px;
+}
+
+.search_wrapper form .inner-form .input-field.third-wrap .btn-search:hover {
+  background: #50c058;
+}
+
+.search_wrapper form .inner-form .input-field.third-wrap .btn-search:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 992px) {
+  .search_wrapper form .inner-form .input-field {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search_wrapper form .inner-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .search_wrapper form .inner-form .input-field {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .search_wrapper form .inner-form .input-field input {
+    padding: 10px 15px;
+  }
+  .search_wrapper form .inner-form .input-field.first-wrap {
+    width: 100%;
+    border-right: 0;
+  }
+  .search_wrapper form .inner-form .input-field.first-wrap .choices__inner {
+    padding: 10px 15px;
+  }
+  .search_wrapper form .inner-form .input-field.first-wrap .choices[data-type*="select-one"]:after {
+    right: 11.5px;
+    border-color: #e5e5e5 transparent transparent transparent;
+  }
+  .search_wrapper form .inner-form .input-field.second-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .search_wrapper form .inner-form .input-field.second-wrap input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .search_wrapper form .inner-form .input-field.third-wrap {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  }
+.tab {
+  	overflow: hidden;
+    border: 1px solid #d29797;
+    background-color: #d8acac;
+    height: 50px;
+    display: block;
+    width: 100%;
+}
+.tab button:hover {
+  background-color: #bb8f8f;
+  border: 1px solid #9c7373;
+  overflow: hidden;
+}
+.tab_button_active {
+  		background-color: #bb8f8f;
+  		border: 1px solid #9c7373;
+  		overflow: hidden;
+  		width: 20%;
+    	height: 100%;
+    	color:blue;
+      float:right;
+}
+.tablinks{
+	width: 20%;
+	height:100%;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+	background-color: #d8acac;
+  float:right;
+} 
+
+.tab_button{
+	border: #d8acac 1px solid;
+    width: 30%;
+    padding: 10px;
+    color: blue;
+    background-color: #d8acac;
+    margin: 0px;
+    float:right;
+}
+.row {
+  padding: 10px;
+  border: 1px blue solid;
+  display:block;
+  position:relative;
+  width:100%;
+}
+.col {
+    display: inline-block;
+    position: relative;
+    width: 24%;
+    height: 100%;
+}
+.books_data {
+  margin: 40px;
+}

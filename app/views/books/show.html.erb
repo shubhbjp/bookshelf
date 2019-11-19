@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @book.about %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @book.category['name'] %>
+</p>
+
+
+<p>
+  <strong>Publication date:</strong>
+  <%= @book.publication_date %>
+</p>
+
+<p>
+  <strong>Writers:</strong>
+  <%= @writers_name_to_show.join(", ") %>
+</p>
+
+<p>
+  <strong>Publishers:</strong>
+  <%= Publication.find(@book.publications_id).name %>
+</p>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

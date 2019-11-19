@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @publication.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @publication.email %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @publication.contact %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @publication.address %>
+</p>
+
+<p>
+  <strong>Isactive:</strong>
+  <%= @publication.isActive %>
+</p>
+
+<%= link_to 'Edit', edit_publication_path(@publication) %> |
+<%= link_to 'Back', publications_path %>

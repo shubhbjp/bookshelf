@@ -1,0 +1,118 @@
+----------------------------------------------
+------------------------------------------
+BookshelfControllerTest: test_should_get_index
+----------------------------------------------
+WritersControllerTest: test_should_get_new
+------------------------------------------
+--------------------------------------------
+WritersControllerTest: test_should_get_index
+------------------------------------------------
+--------------------------------------------
+WritersControllerTest: test_should_update_writer
+------------------------------------------------
+-------------------------------------------------
+WritersControllerTest: test_should_destroy_writer
+-------------------------------------------------
+Started GET "/bookshelf/index" for 127.0.0.1 at 2019-11-15 14:42:54 +0530
+Processing by BookshelfController#index as HTML
+-------------------------------------------
+WritersControllerTest: test_should_get_edit
+-------------------------------------------
+  Rendering bookshelf/index.html.erb within layouts/application
+------------------------------------------------
+WritersControllerTest: test_should_create_writer
+------------------------------------------------
+----------------------------------------------
+WritersControllerTest: test_should_show_writer
+----------------------------------------------
+--------------------------------------------
+BooksControllerTest: test_should_create_book
+--------------------------------------------
+--------------------------------------------
+BooksControllerTest: test_should_update_book
+--------------------------------------------
+---------------------------------------------
+BooksControllerTest: test_should_destroy_book
+---------------------------------------------
+-----------------------------------------
+BooksControllerTest: test_should_get_edit
+-----------------------------------------
+------------------------------------------
+BooksControllerTest: test_should_show_book
+------------------------------------------
+----------------------------------------
+BooksControllerTest: test_should_get_new
+----------------------------------------
+------------------------------------------
+BooksControllerTest: test_should_get_index
+------------------------------------------
+  Rendered bookshelf/index.html.erb within layouts/application (Duration: 703.2ms | Allocations: 1345158)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/shubham/projects/test/ruby/bookshelf/public/packs-test
+[Webpacker] Hash: 25b85d8f8a4fab268321
+Version: webpack 4.41.2
+Time: 328ms
+Built at: 2019-11-15 14:42:56
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-397939f6eba46fd6c1b1.js   92.1 KiB  application  [emitted] [immutable]  application
+js/application-397939f6eba46fd6c1b1.js.map    101 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-397939f6eba46fd6c1b1.js js/application-397939f6eba46fd6c1b1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 3.73 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 1843ms (Views: 1833.3ms | MongoDB: 0.0ms | Allocations: 1349823)
+----------------------------------------------
+BookshelfControllerTest: test_should_get_index
+----------------------------------------------
+--------------------------------------------
+BooksControllerTest: test_should_update_book
+----------------------------------------
+--------------------------------------------
+BooksControllerTest: test_should_get_new
+----------------------------------------
+---------------------------------------------
+BooksControllerTest: test_should_destroy_book
+---------------------------------------------
+Started GET "/bookshelf/index" for 127.0.0.1 at 2019-11-15 14:44:41 +0530
+------------------------------------------
+BooksControllerTest: test_should_get_index
+------------------------------------------
+Processing by BookshelfController#index as HTML
+--------------------------------------------
+BooksControllerTest: test_should_create_book
+--------------------------------------------
+-----------------------------------------
+BooksControllerTest: test_should_get_edit
+-----------------------------------------
+  Rendering bookshelf/index.html.erb within layouts/application
+------------------------------------------
+BooksControllerTest: test_should_show_book
+------------------------------------------
+----------------------------------------------
+WritersControllerTest: test_should_show_writer
+----------------------------------------------
+------------------------------------------------
+WritersControllerTest: test_should_update_writer
+------------------------------------------------
+--------------------------------------------
+WritersControllerTest: test_should_get_index
+--------------------------------------------
+------------------------------------------
+WritersControllerTest: test_should_get_new
+------------------------------------------
+-------------------------------------------
+WritersControllerTest: test_should_get_edit
+-------------------------------------------
+------------------------------------------------
+WritersControllerTest: test_should_create_writer
+------------------------------------------------
+-------------------------------------------------
+WritersControllerTest: test_should_destroy_writer
+-------------------------------------------------
+  Rendered bookshelf/index.html.erb within layouts/application (Duration: 643.5ms | Allocations: 1262678)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 655ms (Views: 647.8ms | MongoDB: 0.0ms | Allocations: 1266637)
