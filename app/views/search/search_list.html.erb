@@ -1,3 +1,24 @@
 <h1>Search Data</h1>
 
 
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>About</th>
+      <th>Category</th>
+      <th>Publication date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @data.each do |book| %>
+      <tr>
+        <td><%= book['title'] %></td>
+        <td><%= book['about'] %></td>
+        <td><%= book['category'] %></td>
+        <td><%= book['publication_date'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
