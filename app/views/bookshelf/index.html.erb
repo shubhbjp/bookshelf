@@ -62,7 +62,7 @@
                   </div>    
                   <div class = "col">
                       <p>Authors:</p>
-                      <% @authors_data.each do |author| %>
+                      <% @authors_data[book.id].each do |author| %>
                       <h2> <%= author['name'] %></h2>
                       <h5> Email: <%= author['email'] %></h5>
                       <h5> Mobile: <%= author['mobile'] %></h5>

@@ -126,7 +126,11 @@ window.onload = function () {
     search_button.onclick = function () {
       var xhr = new XMLHttpRequest();
 
-      xhr.onreadystatechange = function () {};
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          window.location.href = '/search?key=' + document.getElementById('search').value.trim()
+        }
+      };
 
       xhr.open('GET', '/search?key=' + document.getElementById('search').value.trim());
       xhr.send();

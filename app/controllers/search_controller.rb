@@ -8,10 +8,10 @@ class SearchController < ApplicationController
 	  else
 		redis = Redis.new(host: "localhost")
 		key_exists = redis.exists(params['key'])
-		  if key_exists
+		if key_exists
 			 @data = JSON.parse(redis.get(params['key']))
-		  else  
-        book_data_from_db = Book.where('title': params['key'])
+		else  
+            book_data_from_db = Book.where('title': params['key'])
 				book_data_from_db.each { 
   				|book| 
           authors_data = []
